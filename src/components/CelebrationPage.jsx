@@ -28,26 +28,26 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
 
   // QNA Slides data
   const slides = [
-    {
-      icon: "✨",
-      text: "It's Your Special Day Yeyey!",
-      type: "announcement",
-    },
-    {
-      icon: "✨",
-      text: "Do you wanna see what I made??",
-      type: "question",
-      options: [
-        { text: "Yes!", value: "yes" },
-        { text: "No", value: "no" },
-      ],
-    },
-    {
-      icon: "✨",
-      text: "Have a look at it, Madam Jiii",
-      type: "announcement",
-    },
-  ];
+  {
+    icon: "✨",
+    text: "Well well… look who’s getting older today 👀✨",
+    type: "announcement",
+  },
+  {
+    icon: "✨",
+    text: "I may or may not have made something for you… Wanna see it? 😌",
+    type: "question",
+    options: [
+      { text: "Obviously, yes 😌", value: "yes" },
+      { text: "Hmm… convince me", value: "no" },
+    ],
+  },
+  {
+    icon: "✨",
+    text: "Alright then… don’t say I didn’t warn you 😏",
+    type: "announcement",
+  },
+];
 
   // Handle slide progression
   const handleNext = () => {
@@ -332,10 +332,10 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
         <>
           {/* Buttons Section - At the TOP */}
           <div className="celebration-buttons">
-            <h2 className="celebration-title">Let's Celebrate! 🎉</h2>
-            <p className="celebration-subtitle">
-              Click the buttons to decorate
-            </p>
+            <h2 className="celebration-title">Your private birthday setup 🎉</h2>
+<p className="celebration-subtitle">
+  Go on… make it magical ✨
+</p>
 
             <div className="buttons-grid">
               {/* Lights Button - Shows first, hides after click */}
