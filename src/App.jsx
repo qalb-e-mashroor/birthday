@@ -155,7 +155,7 @@ function App() {
         </button>
         <MessageCard isActive={currentPage === 3} />
         <button className="page-nav-btn" onClick={() => goToPage(4)}>
-          📸 Bet you didn’t expect this 😉
+          📸 Okay but… just look at you 😉
         </button>
       </div>
 
