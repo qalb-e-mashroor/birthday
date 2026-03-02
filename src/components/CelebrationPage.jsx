@@ -27,10 +27,10 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
   const [showConfetti, setShowConfetti] = useState(false);
 
   // QNA Slides data
-  const slides = [
+const slides = [
   {
     icon: "✨",
-    text: "Well well… look who’s getting older today 👀✨",
+    text: "It’s finally here… the day we’ve been counting down for! ✨🎈",
     type: "announcement",
   },
   {
@@ -44,7 +44,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
   },
   {
     icon: "✨",
-    text: "Alright then… don’t say I didn’t warn you 😏",
+    text: "Brace yourself… the fun is about to begin 😏",
     type: "announcement",
   },
 ];
