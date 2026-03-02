@@ -826,3 +826,152 @@
     font-size: 0.95rem;
   }
 }
+
+
+/* ================== Celebration Page Animations ================== */
+
+/* Pulse animation for active slide progress dot */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+/* Cake pop animation */
+.decoration-music.cake-container {
+  transform: scale(0);
+  opacity: 0;
+  animation: cakePopAuto 0.8s forwards;
+}
+@keyframes cakePopAuto {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Floating hearts background animation */
+.heart-float {
+  position: absolute;
+  bottom: -50px;
+  font-size: 1.5rem;
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-150px) rotate(15deg); }
+  100% { transform: translateY(-300px) rotate(-15deg); }
+}
+
+/* Balloons flying animation */
+.balloon-body {
+  width: 40px;
+  height: 50px;
+  border-radius: 50% 50% 50% 50%;
+  background: linear-gradient(135deg, #ff4081, #e91e63);
+}
+.balloon-string {
+  width: 2px;
+  height: 60px;
+  background: #555;
+  margin: 0 auto;
+}
+.decoration-balloons .balloon {
+  position: absolute;
+  bottom: 0;
+  animation-name: floatBalloon;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatBalloon {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-200px) rotate(5deg); }
+  100% { transform: translateY(-400px) rotate(-5deg); }
+}
+
+/* ================== Sparkle / Glow Effects ================== */
+
+/* Glow for string lights */
+.decoration-lights .light {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff4081;
+  box-shadow: 0 0 6px #ff4081, 0 0 12px #ff4081;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.6; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0.7; transform: scale(1); }
+}
+
+/* Sparkle effect for bunting flags */
+.bunting-flag {
+  position: relative;
+}
+.bunting-flag::after {
+  content: "✨";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  font-size: 0.8rem;
+  opacity: 0.8;
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: translateX(-50%) scale(0); opacity: 0; }
+  50% { transform: translateX(-50%) scale(1); opacity: 1; }
+  }
+
+
+/* ================== Floating Hearts Sparkle ================== */
+.heart-float {
+  position: absolute;
+  font-size: 1.5rem;
+  pointer-events: none;
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.heart-float::after {
+  content: "✨";
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  font-size: 0.7rem;
+  opacity: 0.8;
+  animation: heartSparkle 2s infinite;
+}
+
+/* Heart floating animation (already existing, just in case) */
+@keyframes floatUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-300px); }
+}
+
+/* Heart sparkle animation */
+@keyframes heartSparkle {
+  0%, 100% { transform: translateX(-50%) scale(0); opacity: 0; }
+  50% { transform: translateX(-50%) scale(1); opacity: 1; }
+  }
