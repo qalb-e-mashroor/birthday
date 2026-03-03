@@ -170,7 +170,7 @@ function App() {
         </button>
         <Gallery isActive={currentPage === 4} />
         <section className="final">
-          <h2 className="final-message">💖 Not doing the bare minimum since day one — Dilshad Siddique 💖</h2>
+          <h2 className="final-message">💖 Consider this your annual reminder that you’re appreciated — Dilshad Siddique 💖</h2>
           <p className="final-subtitle">May this year bring you everything you pretend you don’t want but secretly deserve ✨</p>
         </section>
       </div>
