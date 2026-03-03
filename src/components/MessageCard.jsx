@@ -17,11 +17,11 @@ function MessageCard({ isActive }) {
 
 I know we joke around a lot… but today, I just wanted to say this properly.
 
-You genuinely have this way of making conversations lighter, funnier, and somehow more interesting without even trying and that’s rare. The world shifts a little on this day, and I’m glad it brought you into my life. I feel lucky to know you, and I hope you know I’m always cheering for you.
+You genuinely have this way of making conversations lighter, funnier, and somehow more interesting without even trying, and that’s rare. I’m just really glad I get to know you. And I hope you know I’m always cheering for you.
 
-Of course, I’ll still professionally annoy you like I’ve been doing since 2022 😉.... Just making sure you felt special today.
+Of course, I’ll still professionally annoy you like I’ve been doing since 2022 😉... Just making sure you felt a little extra special today.
 
-I didn’t make this to impress you. I made it because you’re someone worth putting effort into, and I wanted you to feel that, even from afar.
+I didn’t make this to impress you. I made it because you’re someone worth putting effort into, and I wanted you to feel that... even from afar.
 
 Keep smiling the way you do. Keep being a little dramatic. Keep being you.
 
