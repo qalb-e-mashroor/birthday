@@ -97,7 +97,7 @@ setTime({ days, hours, minutes, seconds });
 <Digit value={time.minutes} label="Minutes" prevValue={prevTime.minutes} />
 <Digit value={time.seconds} label="Seconds" prevValue={prevTime.seconds} />
       </div>
-
+/*
       {/* ⚠️ TEST BUTTON - delete it from here⚠️ */}
       <button
         className="test-button"
@@ -107,6 +107,7 @@ setTime({ days, hours, minutes, seconds });
         🎉 Test Celebration
       </button>
       {/* ⚠️ END TEST BUTTON - DELETE UP TO HERE ⚠️ */}
+*/
     </section>
   );
 }
